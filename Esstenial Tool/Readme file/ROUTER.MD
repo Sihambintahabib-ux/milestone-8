@@ -1,3 +1,6 @@
+## what is router : 
+router : define different path of a webpage, is based on SPA(Single Page Application) , render the components for different url or path 
+
 ## INSTRUCTION OF Install React-router   
 - Downoad : ` npm i react-router `
 - Create ROUTER and RENDER : add these code into ` main.jsx `
@@ -29,13 +32,27 @@ ReactDOM.createRoot(root).render(
 
 
 ---
+
 ## CREATE DIFFERENT PATH : 
  CREATE `createBrowserRouter ([ array of path ])` FUNCTION : <br>
  ```
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <div>Hello World</div>,
+    path: "/", // root path , define path or url
+    element: <div>Hello World</div>, // elements : html-tag name  
+    Component: Header; // components name only  
   },
 ]); 
 ```
+## CREATE DIFFERENT PATH (Nested path): 
+ CREATE `createBrowserRouter ([ array of path ])` FUNCTION : <br>
+ ```
+const router = createBrowserRouter([
+  {
+    path: "/", // root path , define path or url
+    element: <div>Hello World</div>, // elements : html-tag name  
+    Component: Header; // components name only  
+  },
+]); 
+```
+

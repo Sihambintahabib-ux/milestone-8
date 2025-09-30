@@ -12,7 +12,7 @@ import Home from './components/home/Home.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    // element: <div>Element : HELLO FROM REACT ROUTER</div>,
+    element: <h1>Element : Hello , I am / path root .</h1>,
   },
   {
     path: "app",

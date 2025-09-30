@@ -1,14 +1,21 @@
 *{
-    
-    color: aliceblue;
+    margin: 0;
+    padding: 0;
 }
-#root {
+#root { 
     display: flex;
-        justify-content: center;
-        align-items: center;
-    width: 500px;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* background: #000; */
+    text-align: center;
+    color: aliceblue;
+    
+}
+h1{
+    width: 50%;
     padding: 50px;
-    font-size: large;
-    background: #000;
+    /* height: 50%; */
+    background: red;
 
 }

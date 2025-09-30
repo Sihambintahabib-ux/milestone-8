@@ -1,0 +1,14 @@
+*{
+    
+    color: aliceblue;
+}
+#root {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 500px;
+    padding: 50px;
+    font-size: large;
+    background: #000;
+
+}

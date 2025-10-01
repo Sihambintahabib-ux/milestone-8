@@ -7,12 +7,20 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Header from './components/header/Header.jsx';
 import Home from './components/home/Home.jsx';
-
+import Root from './components/Root.jsx';
+import Projects from "./components/project/Projects.jsx"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <h1>Element : Hello , I am / path root .</h1>,
+    // element: <h1>Element : Hello , I am / path root .</h1>,
+    Component : Root,
+    children : [
+      {index:true, Component: Home},
+      { path: 'header' ,Component: Header},
+      { path: 'home' ,Component: Home},
+      { path: 'projects' ,Component: Projects },
+    ]
   },
   {
     path: "app",
